@@ -24,7 +24,6 @@
         "https://signin.aws.amazon.com/saml",
         "storage",
         "downloads",
-        "downloads.shelf",
-        "tabs"
+        "downloads.shelf"
     ]
 }
