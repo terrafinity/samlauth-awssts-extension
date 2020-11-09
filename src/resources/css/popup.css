@@ -1,0 +1,48 @@
+div.status {
+    width:350px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -webkit-padding-after: 3px;
+    -webkit-padding-before: 3px;
+    -webkit-padding-end: 3px;
+    -webkit-padding-start: 3px;
+    text-decoration: none;
+    color: initial;
+    margin-top: 15px;
+}
+
+div.option {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+div#account-table {
+    font-size: 9pt;
+    color: darkslategray;
+}
+
+div#account-table > .account-row > .accountid {
+    display: inline-block;
+    width: 95px;
+}
+div#account-table > .account-row > .accountname {
+    display: inline-block;
+    width: 100px;
+}
+div#account-table > .account-row > .expiry {
+    display: inline-block;
+    width: 145px;
+    text-align: right;
+}
+
+div.settings-link {
+    width: 150px;
+    display: inline-block;
+}
+div.refresh-icon {
+    width: 190px;
+    text-align: right;
+    display: inline-block;
+}

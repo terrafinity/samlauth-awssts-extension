@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SAML Assertion to STS Session Extension</title>
+    <script src="../resources/js/jquery-3.5.1.min.js"></script>
+    <style type="text/css">
+        @import url('../resources/css/popup.css');
+    </style>
+</head>
+
+<body>
+    <div class="status">
+        <h3>SAML to STS Extension</h3>
+        <div class="option">
+            <input type="checkbox" id="extensionactive" name="extensionactive"></input> <label
+                for="extensionactive">Extension Activated</label>
+        </div>
+        <div class="option">
+            <div id="account-table">
+                <div class="account-row" id="account-header">
+                    <div class="accountid">Account Id</div><div class="accountname">Profile Name</div><div class="expiry">STS Session Expires</div>
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="settings-link">
+                <a href="../settings/settings.html" target="_blank" class="button">Extension settings</a>
+            </div>
+            <div class="refresh-icon">
+                <a href="#" id="refresh-icon"><img src="../resources/images/refresh.png" alt="refresh" /></a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../resources/js/popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+body {
+    font-size: 12pt;
+}
+
+#container {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    width:100%;
+    height:100%;
+    margin:0px;
+}
+
+#sidebar {
+    background-color: darkslategray;
+    color: white;
+    position: absolute;
+    width: 100px;
+    top: 0px;
+    bottom: 0px;
+    border-right: solid 1px white;
+}
+
+#content {
+    position:absolute;
+    left:101px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+}
+
+div.option {
+    margin-bottom: 15px;
+}
+
+div.menu-active {
+    background-color: white;
+    color: darkslategray;
+    height: 70px;
+    display: table-row;
+    vertical-align: middle;
+    width: 100px;
+    text-align: center;
+}
+
+div.menu-active a {
+    color: darkslategray;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    font-size: 14pt;
+}
+
+div.menu-inactive {
+    height: 70px;
+    display: table-row;
+    vertical-align: middle;
+    width: 100spx;
+    text-align: center;
+}
+
+div.menu-inactive a {
+    color: white;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    font-size: 14pt;
+}
+
+div.invisible {
+    display: none;
+}
+
+div.buttonrow {
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 70px;
+    z-index: 500;
+    padding-right: 40px;
+}
+
+a.button {
+    background-color: darkslategray;
+    display:inline-block;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: solid 1px gray;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14pt;
+}
+
+a.button:hover {
+    background-color:slategray;
+    cursor:pointer;
+}
+
+a.smallbutton {
+    background-color: darkslategray;
+    display:inline-block;
+    color: white;
+    height: 25px;
+    width: 80px;
+    border: solid 1px gray;
+    text-align: center;
+    line-height: 25px;
+    font-size: 11pt;
+}
+
+a.smallbutton:hover {
+    background-color:slategray;
+    cursor:pointer;
+}
+
+
+a.sidebar-link:hover {
+    background-color:slategray;
+    cursor:pointer;
+}
+
+
+div.panel {
+    display: none;
+}
+
+div.panel.visible {
+    display:table-row;
+}
+
+span.accountid {
+    width:90px;
+    display:inline-block;
+}
+input.accountid {
+    width:80px;
+    margin-right: 6px;
+}
+
+span.friendlyname {
+    width:210px;
+    display:inline-block;
+}
+input.friendlyname {
+    width:200px;
+    margin-right: 6px;
+}

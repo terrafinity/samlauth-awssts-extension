@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "author": "terrafinity",
+    "homepage_url": "https://github.com/terrafinity/samlauth-awssts-extension",
+    "name": "SAML Assertion to AWS STS Assumption",
+    "description": "Assumes an STS role and produces usable session credentials for CLI tools from an intercepted SAML assertion",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "resources/images/logo_32.png",
+        "default_popup": "settings/popup.html"
+    },
+    "icons": {
+        "16": "resources/images/logo_16.png",
+        "32": "resources/images/logo_32.png",
+        "48": "resources/images/logo_48.png",
+        "128": "resources/images/logo_128.png"
+    },
+    "background": {
+        "page": "background/background.html"
+    },
+    "options_page": "settings/settings.html",
+    "permissions": [
+        "webRequest",
+        "https://signin.aws.amazon.com/saml",
+        "storage",
+        "downloads",
+        "downloads.shelf",
+        "tabs"
+    ]
+}

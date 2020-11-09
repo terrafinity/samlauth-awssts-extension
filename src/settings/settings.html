@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SAML Assertion to STS Session Extension Options</title>
+    <script src="../resources/js/jquery-3.5.1.min.js"></script>
+    <style type="text/css">
+        @import url('../resources/css/settings.css');
+    </style>
+</head>
+
+<body>
+    <script type="module" src="../resources/js/settings.js"></script>
+    <div id="container">
+        <div id="sidebar">
+            <div class="menu-active" id="general-sidebar">
+                <a class="sidebar-link" id="general-link">General Options</a>
+            </div>
+            <div class="menu-inactive" id="account-sidebar">
+                <a class="sidebar-link" id="account-link">Account Options</a>
+            </div>
+            <div class="menu-inactive invisible" id="role-sidebar">
+                <a class="sidebar-link" id="role-link">Role Options</a>
+            </div>
+        </div>
+        <div id="content">
+            <div id="general-opt" class="panel visible">
+                <h3>General Options</h3>
+                <div class="option">
+                    Options on this page configure general extension settings that affect all accounts.
+                </div>
+                <div class="option">
+                    <label for="filename">Filename to save credential file (this file will be saved in your Downloads
+                        folder)</label><br />
+                    <input type="text" name="filename" id="filename" placeholder="credentials" />
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="applyidpduration" id="applyidpduration" /> <label
+                        for="applyidpduration">Apply the IDP supplied session duration</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="debug" id="debug" /> <label for="debug">Run in DEBUG mode</label>
+                </div>
+
+            </div>
+            <div id="accounts-opt" class="panel">
+                <h3>Account Options</h3>
+                <div class="option">
+                    This page allows you to map account IDs to &quot;friendly names&quot; which will be saved in your
+                    credentials file as profiles. Note that after changing this, you will need to re-authenticate to any
+                    accounts you have added a new friendly name for in order for this change to take effect.
+                </div>
+                <div class="option">
+                    <span class="accountid">Account ID</span>
+                    <span class="friendlyname">Friendly name for account</span>
+                </div>
+                <div id="account-table">
+                    <!--
+                    <div class="option">
+                        <input type="text" class="accountid" data-id="0" placeholder="account id" /><input type="text" class="friendlyname" data-id="0" placeholder="default" /><button class="del-button" data-id="0">DEL</button>
+                    </div>
+                -->
+                </div>
+                <div class="option">
+                    <a class="smallbutton" id="add-account" data-next-id="1">Add New</a>
+                </div>
+            </div>
+            <div id="roles-opt" class="panel">
+                <h3>Role Options</h3>
+                <div class="option">
+                    This page allows you to &quot;role chain&quot; to adopt additional roles whenever you sign in (where
+                    your base role permits). Chained roles can be
+                    adopted for a maximum of one hour, which cannot be changed.
+                </div>
+                <div class="option">
+                    This functionality is not yet supported (E_NOTIMPL)
+                </div>
+            </div>
+            <div class="buttonrow">
+                <a class="button" id="save-button">Save</a>
+                <a class="button" id="revert-button">Revert</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
